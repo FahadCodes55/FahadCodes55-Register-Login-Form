@@ -1,45 +1,44 @@
-# FahadCodes-Pig-Game.py
-![logo](https://github.com/FahadCodes55/FahadCodes-Pig-Game.py/blob/main/Pig%20Game.jpg)
-
+# FahadCodes-User Authentication
 <h1 align="center">Hi 👋, I'm Muhammad Fahad</h1>
 <h3 align="center">A passionate Software engineer from Pakistan</h3>
 
 <img align="right" alt="coding" width="400" src="https://user-images.githubusercontent.com/55389276/140866485-8fb1c876-9a8f-4d6a-98dc-08c4981eaf70.gif">
-<br></br>
-<h1>Pig (dice game)</h1>
+<br></br><br><br><br><br><br>
+<h1>Register-Login Form</h1>
 
-<p>Algorithm Breakdown:
+<h2>Algorithm</h2>
 
-Initialization:
+<h3>Initialization</h3>
 
-Imports necessary libraries: Flask, render_template, request, redirect, url_for from Flask and MySQL from flask_mysqldb.
+<p>Imports necessary libraries: Flask, render_template, request, redirect, url_for from Flask and MySQL from flask_mysqldb.
 Creates a Flask application instance (app) with the appropriate template folder.
-Configures the MySQL connection details for your local Xampp setup.
+Configures the MySQL connection details for your local Xampp setup.</p>
 Routing:
 
-Defines routes using the @app.route decorator for different web pages:
+<h3>Defines routes</h3>
+<p>@app.route decorator for different web pages:
 /: The root route, typically displaying the homepage (handled by the index function).
 /register: Displays the registration form (handled by the register function).
 /register (with POST method): Processes user registration data (handled by the user_register function).
 /login: Displays the login form (handled by the login function).
 /login (with POST method): Authenticates user credentials (handled by the login function).
-/dashboard: Displays the user dashboard (handled by the dashboard function).
-Templating:
+/dashboard: Displays the user dashboard (handled by the dashboard function).</p>
+<h3>Templating</h3>
 
-The render_template function is used to render HTML templates located in the template folder.
-Templates can dynamically display content based on variables passed to them (e.g., username in the login and dashboard routes).
-User Registration:
+<p>The render_template function is used to render HTML templates located in the template folder.
+Templates can dynamically display content based on variables passed to them (e.g., username in the login and dashboard routes).</p>
+<h3>User Registration</h3>
 
-The user_register function handles user registration form submission (POST request):
+<p>The user_register function handles user registration form submission (POST request):
 Extracts user data from the form (username, email, password, gender).
 Establishes a database cursor connection.
 Executes an SQL INSERT query to add the user data to the users table.
 Commits the changes to the database.
 Closes the database cursor.
-Redirects the user to the login page (url_for('login')).
-User Login:
+Redirects the user to the login page (url_for('login')).</p>
+<h3>User Login</h3> 
 
-The login function handles user login form submission (POST request):
+<p>The login function handles user login form submission (POST request):
 Extracts username and password from the form.
 Establishes a database cursor connection.
 Executes an SQL SELECT query to retrieve user information where the username and password match.
@@ -48,13 +47,13 @@ Closes the database cursor.
 If a user record is found:
 Renders the dashboard template, passing the retrieved username as a variable.
 Otherwise:
-Returns an error message indicating invalid credentials.
-Dashboard:
+Returns an error message indicating invalid credentials.</p>
+<h3>Dashboard</h3>
 
-The dashboard function simply renders the dashboard.html template.
-Application Run:
+<p>The dashboard function simply renders the dashboard.html template.</p>
+<h3>Application Run</h3>
 
-The if __name__ == '__main__': block ensures the following code only executes when the script is run directly (not imported as a module).
+<p>The if __name__ == '__main__': block ensures the following code only executes when the script is run directly (not imported as a module).
 Starts the Flask development server in debug mode (debug=True), which is useful for catching errors during development.</p>
 
 
