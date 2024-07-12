@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  background-color: #143;
+  margin-top: 50px;
+}
+
+.input-group h2{
+  text-align: center;
+  color: orange;
+  margin-bottom: 30px;
+}
+
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 0px solid #000;
+  background: #222;
+  border-radius: 8px;
+  box-shadow: 0 0 8px white;
+  margin-top: 60px;
+}
+
+.content h2{
+  color: orange;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.input-group {
+  margin: 10px 0;
+}
+
+
+.input-group i{
+  color: white;
+  font-size: 20px;
+}
+.input-group input {
+  width: 90%;
+  padding: 8px;
+  font-size: 15px;
+  margin-bottom: 1px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: ;
+  color: #000;
+  border-radius: 30px;
+}
+.btn {
+  padding: 5px 19px;
+  font-size: 17px;
+  color: #000;
+  background: #eee;
+  border: none;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+.btn:hover{
+  color: white;
+  background: red;
+  cursor: pointer;
+  transition: 1s;
+}
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 0px solid #a94442;
+  color: red;
+  background: #eee;
+  border-radius: 7px;
+  text-align: left;
+}
+
+p{
+  color: orange;
+  font-size: 17px;
+}
+
+a{
+  color: grey;
+  text-decoration: none;
+}
+
+a:hover{
+  color: white;
+
+}
+
+label{
+	color: white;
+}
+
+i{
+	color: white;
+}
+
+.logout-btn{
+  color: white;
+  background: red;
+  font-size: 20px;
+  padding: 4px 10px;
+  border-radius: 7px;
+}
+
+.logout-btn:hover{
+  background: blue;
+
+}
+
+p{
+  text-align: center;
+}
