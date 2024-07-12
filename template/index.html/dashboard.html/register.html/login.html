@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+</head>
+<body>
+
+  <form method="post" action="/login">
+        <div class="input-group">
+        	<h2>Login</h2>
+        </div>
+        <div class="input-group">
+          <i class="fa fa-user"></i>
+         <input type="text" name="username" placeholder="username" required>
+        </div>
+
+        <div class="input-group">
+          <i class="fa fa-unlock"></i>
+          <input type="password" placeholder="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+            title="uppercase,lowercase,numbers,symbols and 8 min chars">
+        </div>
+
+        <div class="input-group">
+          <button type="submit" class="btn" name="reg_user">Login</button>
+        </div>
+
+        <p>Don't have an account? <a href="/register">register</a></p>
+  </form>
+
+</body>
+</html>
